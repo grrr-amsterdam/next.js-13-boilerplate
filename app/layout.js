@@ -1,17 +1,17 @@
-import { storyblokInit, apiPlugin} from "@storyblok/react/rsc"
-import StoryblokProvider from "@/components/StoryblokProvider"
+import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
+import StoryblokProvider from "@/components/StoryblokProvider";
 
-import './globals.css';
+import "./globals.css";
 
 export const metadata = {
-  title: 'Storyblok and Next.js 13',
-  description: 'A Next.js and Storyblok app using app router ',
-}
+  title: "Storyblok and Next.js 13",
+  description: "A Next.js and Storyblok app using app router ",
+};
 
 storyblokInit({
-  accessToken: 'your-access-token',
-  use: [apiPlugin]
-})
+  accessToken: "kdTPcI3CzuasYakxkaguwgtt",
+  use: [apiPlugin],
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -20,5 +20,5 @@ export default function RootLayout({ children }) {
         <body>{children}</body>
       </html>
     </StoryblokProvider>
-  )
+  );
 }
